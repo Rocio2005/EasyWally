@@ -1,0 +1,33 @@
+h1{
+    color: black;
+    text-align: center;
+}
+.conteiner1{
+    display: flex;
+    border:2px black solid;
+    justify-content: center;
+    margin-left:20%;
+    margin-right: 20%;
+}
+
+.conteiner2{
+    border:2px black solid;
+    justify-content: center;
+    margin-left:20%;
+    margin-right: 20%;
+    width: 400px;
+    height: 400px;
+}
+
+.conteiner2 img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.conteiner h2{
+
+}
+
+
