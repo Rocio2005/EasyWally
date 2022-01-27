@@ -53,3 +53,31 @@ $("#mapa1").click(function (event) {
 
    }
  });
+
+ //buscando al segundo wally
+ var clicks = 0;
+
+ // coloco la ubicacion de wally en la imagen
+var wally1 = {
+   x: 260,
+   y: 60
+ };
+
+ // Agrega el manejo de clicks
+$("#mapa2").click(function (event) {
+   clicks++;
+
+   // Calcula distancia entre el click y wally
+  var distancia = traedistancia(event, wally1);
+   // Convierte la distancia en ayuda
+  var ayuda = traeAyuda(distancia);
+
+   // Actualizar el elemento #distancia
+  $("#distancia").text(ayuda); // muestro en mi archivo con la etiqueta p de identificador #distancia, la ayuda al usuario
+
+   // Si está muy cerca dile que ganó, encontró a wally!
+  if (distancia < 30) {
+     alert("Encontraste a Wally en " + clicks + " clicks!");
+
+   }
+ });
