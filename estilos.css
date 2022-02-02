@@ -1,9 +1,14 @@
 body{
-    background-color: antiquewhite;
+
 }
 h1{
     color: black;
     text-align: center;
+    font-size: 300%;
+}
+
+h1:hover{
+    color: red;
 }
 
 p{
@@ -12,8 +17,27 @@ p{
 .conteiner1{
     display: flex;
     justify-content: center;
-    margin-left:20%;
-    margin-right: 20%;
+    margin-left:15%;
+    margin-right: 15%;
+}
+.conteiner1 h2{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name: aparecer0;
+    animation-duration: 5s;
+}
+@keyframes aparecer0 {
+    from{
+        margin-left: -50%;
+    }
+    to{
+        margin-right: 15%;
+    }
+    
+}
+.conteiner1 p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
 }
 
 .conteiner1 img{
@@ -31,6 +55,16 @@ p{
     
 }
 
+@keyframes color {
+    
+}
+
+#distancia {
+    margin: 1%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    color: red;
+}
 .centro {
     display: flex;
 }
@@ -67,12 +101,28 @@ p{
     border: 2px red solid;
     padding: 10px;
     border-radius: 20px;
+    text-align: right;
+
 }
 .conteiner3 p{
     width: 50%;
+    text-align: justify;
 }
-.conteiner h2{
 
+
+footer{
+    margin-top: 40%;
+    display: flex;
+    margin-right: 20%;
+}
+
+footer section {
+    margin-left: 60%;
+    text-align: center;
+}
+
+footer a{
+    color: red;
 }
 
 

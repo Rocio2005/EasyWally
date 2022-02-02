@@ -22,7 +22,7 @@ var traeAyuda = function (distancia) {
    } else if (distancia < 250) {
      return "Muy frio";
    } else {
-     return "Cogelado!";
+     return "Congelado!";
    }
  };
 
@@ -88,7 +88,7 @@ $("#mapa2").click(function (event) {
  // coloco la ubicacion de wally en la imagen
 var wally2 = {
    x: 260,
-   y: 60
+   y: 260
  };
 
  // Agrega el manejo de clicks
@@ -96,7 +96,7 @@ $("#mapa3").click(function (event) {
    clicks++;
 
    // Calcula distancia entre el click y wally
-  var distancia = traedistancia(event, wally1);
+  var distancia = traedistancia(event, wally2);
    // Convierte la distancia en ayuda
   var ayuda = traeAyuda(distancia);
 
